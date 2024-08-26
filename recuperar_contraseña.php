@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <br>
     <style>
    body {
-    background-image: url("imagenes/banner2.png");
+    background-image: url("imagenes/fondo_login2.jpg");
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen */
     justify-content: center;
@@ -59,7 +59,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     max-width: 400px;
     margin-top: 50px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.4); /* Fondo blanco con 50% de opacidad */
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.0); /* Fondo blanco con 50% de opacidad */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con 50% de opacidad */
     border-radius: 30px;
 }

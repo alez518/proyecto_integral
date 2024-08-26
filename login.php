@@ -2,6 +2,7 @@
 session_start();
 include('config/db.php');
 
+
 // Inicializar variable de error
 $error = '';
 
@@ -68,10 +69,12 @@ body {
     max-width: 400px;
     margin-top: 50px;
     padding: 20px;
+    backdrop-filter: blur(15px);
     background: rgba(255, 255, 255, 0.1); /* Fondo blanco con 50% de opacidad */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra con 50% de opacidad */
     border-radius: 30px;
 }
+
 </style>
 </head>
 <body>
@@ -96,7 +99,7 @@ name="password" required>
 <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
 </form>
 <p class="text-center mt-3">
-<a href="login_registro.php">Registrarse</a> 
+<a href="login_registro.php">Registrarse - </a> 
 <a href="recuperar_contraseña.php">Recuperar Contraseña</a>
 </p>
 </div>
